@@ -1,6 +1,6 @@
 #! /bin/bash
 promptmMssage="LINKS:" # Message should of one word
-menu="rofi -dmenu -p $promptmMssage -i -theme ~/Downloads/aur/rofi-collection/minimal/minimal.rasi"
+menu="dmenu -i -p $promptmMssage"
 linkType=$(echo -e 'Search Engine\nChat Rooms\nForums\nMarkets\nMedia' | $menu)
 
 if [ "$linkType" == "Search Engine" ] # Search Engine
